@@ -83,7 +83,7 @@ app.post('/articles/edit/:id', (req,res) => {
 
     const query = { _id:req.params.id }
 
-    Article.update(query, article,  (err) => {
+    Article.updateOne(query, article,  (err) => {
         if (err) {
             console.log(err)
             return
@@ -98,7 +98,7 @@ app.delete('/article/:id', (req,res) => {
         _id:req.params.id
     }
 
-    Article.remove(query, (err) => {
+    Article.deleteOne(query, (err) => {
         if (err) {
             console.log(err)
         }
