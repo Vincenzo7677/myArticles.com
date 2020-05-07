@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel='stylesheet' href='/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet' href='/css/style.css')
+    title Document
+  body
+    .container 
+      nav.navbar.navbar-expand-lg.navbar-light.bg-dark
+        a.navbar-brand.text-white(href='#') Articles.com
+            #navbarNavAltMarkup.collapse.navbar-collapse
+            .navbar-nav
+            span.sr-only (current)
+            a.nav-item.nav-link.text-white(href='/') Home
+            a.nav-item.nav-link.text-white(href='/articles/add') Add articles
+
+      block content
+        br
+      hr
+      footer
+        pCopyright &copy; 2020
+
+    script(src='/jquery/dist/jquery.js')  
+    script(src='/bootstrap/dist/js/bootstrap.js')
+    script(src="/js/main.js")
